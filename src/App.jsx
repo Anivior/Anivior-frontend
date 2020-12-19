@@ -6,7 +6,9 @@ import About from './components/about';
 import Gallery from './components/gallery';
 import Team from './components/Team';
 import Contact from './components/contact';
+import NGORegister from './components/NGORegister';
 import JsonData from './data/data.json';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 export class App extends Component {
   state = {
@@ -21,7 +23,7 @@ export class App extends Component {
   }
 
   render() {
-    return (
+    const landingPage = 
       <div>
         <Navigation />
         <Header data={this.state.landingPageData.Header} />
@@ -32,7 +34,14 @@ export class App extends Component {
         {/* <Testimonials data={this.state.landingPageData.Testimonials} /> */}
         <Team data={this.state.landingPageData.Team} />
         <Contact data={this.state.landingPageData.Contact} />
+
       </div>
+
+    return (
+      <Router>
+        <Route exact path = "/">{landingPage}</Route>
+        <Route path = "/ngoregister" render = {()=><NGORegister/>}/>
+      </Router>
     )
   }
 }

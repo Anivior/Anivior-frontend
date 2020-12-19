@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {NavLink} from 'react-router-dom';
 
 export class Navigation extends Component {
   render() {
@@ -54,6 +55,12 @@ export class Navigation extends Component {
                 <a href="#contact" className="page-scroll">
                   Contact
                 </a>
+              </li>
+
+              <li>
+                <NavLink to="/ngoregister" className="page-scroll">
+                  NGO's Registration
+                </NavLink>
               </li>
             </ul>
           </div>
