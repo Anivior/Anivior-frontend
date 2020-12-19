@@ -19,7 +19,7 @@ export class Gallery extends Component {
                   <div className="hover-bg">
                     {" "}
                     <a
-                      href="img/portfolio/01-large.jpg"
+                      href="img/portfolio/01-small.jpg"
                       title="Project Title"
                       data-lightbox-gallery="gallery1"
                     >
@@ -40,7 +40,7 @@ export class Gallery extends Component {
                   <div className="hover-bg">
                     {" "}
                     <a
-                      href="img/portfolio/02-large.jpg"
+                      href="img/portfolio/02-small.jpg"
                       title="Project Title"
                       data-lightbox-gallery="gallery1"
                     >
@@ -61,7 +61,7 @@ export class Gallery extends Component {
                   <div className="hover-bg">
                     {" "}
                     <a
-                      href="img/portfolio/03-large.jpg"
+                      href="img/portfolio/03-small.jpg"
                       title="Project Title"
                       data-lightbox-gallery="gallery1"
                     >
@@ -82,7 +82,7 @@ export class Gallery extends Component {
                   <div className="hover-bg">
                     {" "}
                     <a
-                      href="img/portfolio/04-large.jpg"
+                      href="img/portfolio/04-small.jpg"
                       title="Project Title"
                       data-lightbox-gallery="gallery1"
                     >
@@ -103,7 +103,7 @@ export class Gallery extends Component {
                   <div className="hover-bg">
                     {" "}
                     <a
-                      href="img/portfolio/05-large.jpg"
+                      href="img/portfolio/05-small.jpg"
                       title="Project Title"
                       data-lightbox-gallery="gallery1"
                     >
@@ -124,7 +124,7 @@ export class Gallery extends Component {
                   <div className="hover-bg">
                     {" "}
                     <a
-                      href="img/portfolio/06-large.jpg"
+                      href="img/portfolio/06-small.jpg"
                       title="Project Title"
                       data-lightbox-gallery="gallery1"
                     >
