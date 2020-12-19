@@ -33,6 +33,7 @@ class ReportAnimal extends Component {
         height:'100%',
         }}>
           <form style={{width:'70%'}}>
+          <button onClick={()=>this.props.history.push('/')} type="submit" class="btn btn-primary" style={{height:"8%"}}>Go Back</button>
           <center><h2>Report Now</h2></center>
         
           <div class="input-group mb-3">

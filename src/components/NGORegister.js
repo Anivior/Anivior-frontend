@@ -23,7 +23,10 @@ class NGORegister extends Component {
         height:'100%',
         }}>
           <form style={{width:'70%'}}>
+          <div style={{display:"flex", flexDirection:"row", justifyContent: "space-between" }}>
           <h2>NGO Registration</h2>
+          <button onClick={()=>this.props.history.push('/')} type="submit" class="btn btn-primary" style={{height:"80%"}}>Go Back</button>
+          </div>
           <div class="form-group">
             <label for="exampleInputEmail1">NGO Name</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name"/>
