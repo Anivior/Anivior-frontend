@@ -40,7 +40,7 @@ export class App extends Component {
     return (
       <Router>
         <Route exact path = "/">{landingPage}</Route>
-        <Route path = "/ngoregister" render = {()=><NGORegister/>}/>
+        <Route path = "/ngoregister" component={NGORegister}/>
       </Router>
     )
   }

@@ -1,68 +1,58 @@
-import React, { useState } from "react";
-import MapPicker from 'react-google-map-picker'
+import React, { Component } from 'react'
 
-const DefaultLocation = { lat: 10, lng: 106};
-const DefaultZoom = 10;
 
-const NGORegister = ()=>{
+class NGORegister extends Component {
 
-const [defaultLocation, setDefaultLocation] = useState(DefaultLocation);
+  onLocationHandler = () => {
+    navigator.geolocation.getCurrentPosition((position)=>{
+      console.log(position)
+    })
+  }
 
-const [location, setLocation] = useState(defaultLocation);
-const [zoom, setZoom] = useState(DefaultZoom);
+  render() {
 
-function handleChangeLocation (lat, lng){
-setLocation({lat:lat, lng:lng});
+
+    return (
+      <>
+        {/* <Navigation/> */}
+        <div style={{display:'flex',
+        flexFlow:'column',
+        justifyContent:'center',
+        alignItems:'center',
+        width:'100%',
+        height:'100%',
+        }}>
+          <form style={{width:'70%'}}>
+          <h2>NGO Registration</h2>
+          <div class="form-group">
+            <label for="exampleInputEmail1">NGO Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name"/>
+            <small id="emailHelp" class="form-text text-muted">Please fill the name of your Ngo.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">PinCode</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Pincode"/>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">City</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="City"/>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
+          </div>
+          <button type="submit" class="btn btn-primary" onClick={this.onLocationHandler}>Location</button>
+          <br/>
+          <br/>
+
+          <center><button onClick={()=>this.props.history.push('/')} type="submit" class="btn btn-primary">Submit</button></center>
+      </form>
+      </div>
+      </>
+      
+      
+    )
+  }
 }
 
-function handleChangeZoom (newZoom){
-setZoom(newZoom);
-}
-
-function handleResetLocation(){
-setDefaultLocation({ ... DefaultLocation});
-setZoom(DefaultZoom);
-}
-
- return (
- 	<div className = "text-center">	
-        <div className="col-md-10 col-md-offset-1 section-title">
-        	<h2>Register</h2>
-        </div>
-
-    	<div className="form-outline col-xs-4 text-center">
-    	  <input type="text" id="form1" placeholder="NGO Name" className="form-control " />
-    	</div>
-
-        <div className="form-outline col-xs-4 text-center">
-          <input type="email" id="form1" placeholder="Email ID" className="form-control " />
-        </div>
-
-        <div className="form-outline col-xs-4 text-center">
-          <input type="text" id="form1" placeholder="City" className="form-control " />
-        </div>
-
-        <div className="form-outline col-xs-4 text-center">
-          <input type="text" id="form1" placeholder="Pincode" className="form-control " />
-        </div>
-
-        <button onClick={handleResetLocation}>Reset Location</button>
-        <label>Latitute:</label><input type='text' value={location.lat} disabled/>
-        <label>Longitute:</label><input type='text' value={location.lng} disabled/>
-        <label>Zoom:</label><input type='text' value={zoom} disabled/>
-
-        <MapPicker defaultLocation={defaultLocation}
-        zoom={zoom}
-        style={{height:'700px'}}
-        onChangeLocation={handleChangeLocation} 
-        onChangeZoom={handleChangeZoom}
-        apiKey='AIzaSyD07E1VvpsN_0FvsmKAj4nK9GnLq-9jtj8'/>
-        
-      	<button className="btn btn-custom btn-lg page-scroll ">
-          	Register Now
-        </button>
- 	</div>
- 	)
-}
-
-export default NGORegister;
+export default NGORegister
