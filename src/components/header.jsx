@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import   {Link} from 'react-router-dom'
 
 export class Header extends Component {
   render() {
@@ -18,12 +19,13 @@ export class Header extends Component {
                   <p>
                     {this.props.data ? this.props.data.paragraph : "Loading"}
                   </p>
-                  <a
-                    href="#features"
-                    className="btn btn-custom btn-lg page-scroll"
-                  >
-                    Learn More
-                  </a>{" "}
+                  <Link to="/report">
+                    <button
+                      className="btn btn-custom btn-lg page-scroll"
+                    >
+                      Learn More
+                    </button>{" "}
+                  </Link>
                 </div>
               </div>
             </div>
