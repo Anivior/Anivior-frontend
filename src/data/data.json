@@ -1,7 +1,7 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
+        "title": "Your little effort can save us.",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
 
     },
@@ -85,22 +85,22 @@
         }
     ],
     "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "John Doe",
+            "img": "img/team/01.jfif",
+            "name": "Prathmesh Khandelwal",
             "job": "Director"
         },
         {
             "img": "img/team/02.jpg",
-            "name": "Mike Doe",
+            "name": "Krishna Gaur",
             "job": "Senior Designer"
         }, {
             "img": "img/team/03.jpg",
-            "name": "Jane Doe",
+            "name": "Shivansh Kumar",
             "job": "Senior Designer"
         },
         {
             "img": "img/team/04.jpg",
-            "name": "Karen Doe",
+            "name": "Abhishek Tiwari",
             "job": "Project Manager"
         }
     ],
