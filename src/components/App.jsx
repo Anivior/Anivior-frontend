@@ -13,7 +13,7 @@ export class App extends Component {
   state = {
     resumeData : {},
   }
-  getResumeData(){
+  getData(){
     $.ajax({
       url:'/data.json',
       dataType:'json',
@@ -29,7 +29,7 @@ export class App extends Component {
   }
 
   componentDidMount(){
-    this.getResumeData();
+    this.getData();
   }
 
   render() {
@@ -37,7 +37,6 @@ export class App extends Component {
       <div>
         <Navigation />
         <Header data={this.state.resumeData.Header}/>
-        <Features data={this.state.resumeData.Features}/>
         <About  data={this.state.resumeData.About}/>
         <Gallery />
         <Testimonials  data={this.state.resumeData.Testimonials}/>

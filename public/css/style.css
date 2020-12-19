@@ -330,7 +330,7 @@ header .intro-text {
 	margin-bottom: 40px;
 }
 /* Portfolio Section */
-#portfolio {
+#portfolio{
 	padding: 100px 0;
 }
 .portfolio-item {
@@ -577,4 +577,10 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+}
+
+
+
+#ProneAreas {
+	padding: 100px 0 0 0;
 }

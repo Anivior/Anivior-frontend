@@ -23,7 +23,7 @@ export class Header extends Component {
                     <button
                       className="btn btn-custom btn-lg page-scroll"
                     >
-                      Learn More
+                      Report Now
                     </button>{" "}
                   </Link>
                 </div>
