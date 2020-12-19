@@ -10,21 +10,13 @@ export class about extends Component {
             <div className="col-xs-12 col-md-6">
               <div className="about-text">
                 <h2>About Us</h2>
-                <p>{this.props.data ? this.props.data.paragraph : 'loading...'}</p>
-                <h3>Why Choose Us?</h3>
-                <div className="list-style">
-                  <div className="col-lg-6 col-sm-6 col-xs-12">
-                    <ul>
-                      {this.props.data ? this.props.data.Why.map((d, i) => <li  key={`${d}-${i}`}>{d}</li>) : 'loading'}
-                    </ul>
-                  </div>
-                  <div className="col-lg-6 col-sm-6 col-xs-12">
-                    <ul>
-                    {this.props.data ? this.props.data.Why2.map((d, i) => <li  key={`${d}-${i}`}> {d}</li>) : 'loading'}
-
-                    </ul>
-                  </div>
-                </div>
+                <p>Anivior is a web-based application that 
+associates user and close by NGOs in real time so 
+that user can anonymously provide live location and 
+report the subtleties of hurt and surrendered animals. 
+Application likewise gives a map that monitors 
+mishaps and pin points more accident prone regions.
+</p> 
               </div>
             </div>
           </div>
