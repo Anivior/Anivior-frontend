@@ -68,6 +68,7 @@ class ReportAnimal extends Component {
                 <option value="Cow">Cow</option>
             </select>
          </div>
+         <br/>
          <div class="form-group">
             <label for="exampleInputPassword1">Image</label>
             <input type="file" name="file" onChange={(e)=>this.setState({image:e.target.files[0]})}/>
