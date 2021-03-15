@@ -1,5 +1,5 @@
 <p align="center"><img src="https://i.pinimg.com/236x/65/95/54/659554706213492ef44308c5983003fa--animal-adoption-animal-rescue.jpg" align="center" width="350" height="200"></p>
-<a href="#"><h1 align="center">Alivior</h1></a>
+<a href="#"><h1 align="center">Anivior</h1></a>
 <h4 align="center">An endeavor to help harmed animals by associating them to NGOs</h4>
 
 ## Live Links
