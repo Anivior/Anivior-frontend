@@ -13,7 +13,7 @@ export class ProneAreas extends Component {
               Regions which have been reported to have more accidents than anywhere else, thus requiring more focus.
             </p>
             <div style = {{"padding-top": 75}}>
-              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rRQMdfefBbctMI0sjhvjlFaBD4EzEbvY" width="100%" height="480"></iframe>
+              <iframe title="Prone areas" src="https://www.google.com/maps/d/u/0/embed?mid=1rRQMdfefBbctMI0sjhvjlFaBD4EzEbvY" width="100%" height="480"></iframe>
             </div>
           </div>
         </div>

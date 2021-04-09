@@ -19,7 +19,7 @@ class NGORegister extends Component {
     navigator.geolocation.getCurrentPosition((position)=>{
       console.log(position)
       this.setState({
-        point:`POINT(${position.coords.latitude} ${position.coords.longitude})`
+        point:`POINT(${74.657936} ${74.657936})`
       })
     })
   }
